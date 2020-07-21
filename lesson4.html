@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        /**
+        * Создаем новую константу (saleProducts).
+        * Вычисляем колличество скидки.
+        * При помощи метода map применяем   
+        * полученное значение к const.
+        * Выводим в консоль.
+        */
+        const products = [{
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            },
+        ];
+        
+        const saleProducts = products.map(function(product) {
+         return (product.price-(product.price * 0.15));
+        });
+         
+        console.log(saleProducts);
+    
+
+    </script>
+</body>
+
+</html>
